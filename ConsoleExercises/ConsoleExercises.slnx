@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Ex01Variables/Ex01Variables.csproj" />
+  <Project Path="Ex02FizzBuzz/Ex02FizzBuzz.csproj" />
+  <Project Path="Ex03PlayerClass/Ex03PlayerClass.csproj" />
+  <Project Path="Ex04Collections/Ex04Collections.csproj" />
+  <Project Path="Ex05Delegates/Ex05Delegates.csproj" />
+</Solution>

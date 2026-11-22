@@ -85,3 +85,11 @@ crashlytics-build.properties
 [Uu]ser[Ss]ettings/
 [Mm]emoryCaptures/
 [Rr]ecordings/
+
+# --- Added 2026-11-22: ConsoleExercises (dotnet console projects) ---
+# console build output
+[Bb]in/
+# Unity template ignores *.csproj/*.sln (auto-generated for Unity);
+# for console projects these ARE source files, so un-ignore them there:
+!ConsoleExercises/**/*.csproj
+!ConsoleExercises/**/*.sln
