@@ -17,13 +17,19 @@ public class EnemyChase : MonoBehaviour
     {
         agent.SetDestination(target.position);
     }
+
+    void Die()
+    {
+        GameStats.Instance.AddKill();
+        Destroy(gameObject);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            Die();
             other.GetComponent<PlayerHealth>().TakeDamage(10);
-            Destroy(gameObject);
         }
     }
 }
-
